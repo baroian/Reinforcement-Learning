@@ -1,0 +1,15 @@
+# Core dependencies
+numpy>=1.19.0
+matplotlib>=3.3.0
+torch>=1.7.0
+gymnasium>=0.26.0  # Modern version of gym
+
+# Progress bars and parallel processing
+tqdm>=4.50.0
+multiprocessing-logging>=0.3.1  # For logging in multiprocessing
+
+# Time and date handling
+pytz>=2021.1
+
+# Data structures and utilities
+pickle5>=0.0.11  # For Python < 3.8, otherwise built-in
