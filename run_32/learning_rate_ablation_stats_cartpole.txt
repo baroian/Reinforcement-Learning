@@ -1,0 +1,18 @@
+Ablation Study Results for learning_rate
+==================================================
+
+Date: 2025-03-10 14:26:53 (Amsterdam time)
+Experiment started: 2025-03-10 12:02:14 (Amsterdam time)
+Duration: 2.41 hours
+
+Parameter studied: learning_rate
+Values tested: [0.0005, 0.001, 0.005, 0.01]
+
+SUMMARY STATISTICS
+--------------------------------------------------
+Value      Avg Reward      Std Dev         Min        Max        Final Avg Loss 
+--------------------------------------------------------------------------------
+0.0005     95.40           87.17           8.00       500.00     0.012006       
+0.001      115.58          96.78           2.00       500.00     0.027131       
+0.005      120.11          108.67          8.00       500.00     0.100140       
+0.01       110.72          116.13          8.00       500.00     0.108226       

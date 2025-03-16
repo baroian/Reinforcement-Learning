@@ -1,0 +1,19 @@
+Ablation Study Results for epsilon_stop_percentage
+==================================================
+
+Date: 2025-03-10 14:26:50 (Amsterdam time)
+Experiment started: 2025-03-10 12:02:14 (Amsterdam time)
+Duration: 2.41 hours
+
+Parameter studied: epsilon_stop_percentage
+Values tested: [0.01, 0.05, 0.1, 0.25, 0.5]
+
+SUMMARY STATISTICS
+--------------------------------------------------
+Value      Avg Reward      Std Dev         Min        Max        Final Avg Loss 
+--------------------------------------------------------------------------------
+0.01       100.73          114.84          8.00       500.00     0.062678       
+0.05       101.61          92.78           8.00       500.00     0.060376       
+0.1        115.66          101.93          8.00       500.00     0.065298       
+0.25       105.57          88.72           8.00       500.00     0.011738       
+0.5        88.06           83.87           8.00       500.00     0.014879       

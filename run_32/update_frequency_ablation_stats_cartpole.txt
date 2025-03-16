@@ -1,0 +1,19 @@
+Ablation Study Results for update_frequency
+==================================================
+
+Date: 2025-03-10 14:26:55 (Amsterdam time)
+Experiment started: 2025-03-10 12:02:14 (Amsterdam time)
+Duration: 2.41 hours
+
+Parameter studied: update_frequency
+Values tested: [1, 3, 5, 10, 50]
+
+SUMMARY STATISTICS
+--------------------------------------------------
+Value      Avg Reward      Std Dev         Min        Max        Final Avg Loss 
+--------------------------------------------------------------------------------
+1          114.36          108.90          8.00       500.00     0.036951       
+3          117.79          111.49          8.00       500.00     0.265622       
+5          119.70          108.06          1.00       500.00     4.527236       
+10         126.04          114.92          8.00       500.00     0.384683       
+50         122.04          121.25          8.00       500.00     0.695246       

@@ -1,0 +1,18 @@
+Ablation Study Results for layer_size
+==================================================
+
+Date: 2025-03-10 14:26:58 (Amsterdam time)
+Experiment started: 2025-03-10 12:02:14 (Amsterdam time)
+Duration: 2.41 hours
+
+Parameter studied: layer_size
+Values tested: [32, 64, 128, 256]
+
+SUMMARY STATISTICS
+--------------------------------------------------
+Value      Avg Reward      Std Dev         Min        Max        Final Avg Loss 
+--------------------------------------------------------------------------------
+32         128.34          127.94          8.00       500.00     0.061590       
+64         128.47          105.34          8.00       500.00     0.026728       
+128        128.83          108.43          8.00       500.00     0.027273       
+256        126.90          107.22          8.00       500.00     0.032531       
