@@ -1,0 +1,64 @@
+Comparison of DQN Methods
+========================
+
+Fixed Hyperparameters:
+  update_frequency: 5
+  max_steps: 500
+  total_steps: 1000000
+  gamma: 0.99
+  epsilon_start: 1.0
+  epsilon_min: 0.1
+  epsilon_stop_percentage: 0.1
+  learning_rate: 0.001
+  layer_size: 64
+  nr_layers: 3
+  target_update_frequency: 50
+  replay_buffer_size: 100000
+  batch_size: 16
+
+Results Summary:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method               Avg Reward      Std Dev (Runs)  Std Dev (Eps)   Min        Max        Avg Episodes    Last Ep Reward  Last 200K Avg   Max Episode Rew
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Baseline DQN         214.73          4.77            181.63          207.90     222.52     4659.4          173.80          289.21          500.00         
+Target Network Only  109.60          4.40            147.75          102.25     114.42     9139.0          196.40          319.35          500.00         
+Experience Replay Only 92.24           5.23            113.46          86.25      98.18      10876.2         255.40          246.70          500.00         
+Both Methods         88.97           6.85            120.41          75.59      95.08      11314.8         215.60          254.49          500.00         
+Random Baseline      384.42          163.92          163.92          8.00       500.00     N/A             500.00          490.03          500.00         
+
+Standard Deviation Explanation:
+- Std Dev (Runs): Standard deviation of average rewards across the 5 runs (measures run-to-run consistency)
+- Std Dev (Eps): Standard deviation across all episodes in all runs (measures episode-to-episode variability)
+
+
+Detailed Analysis:
+
+Best Method (Overall Avg): Baseline DQN with average reward 214.73
+Best Method (Last Episode): Experience Replay Only with average last episode reward 255.40
+Best Method (Last 200K Steps): Target Network Only with average reward 319.35
+
+Most Consistent Method (Lowest Episode-to-Episode Variability): Experience Replay Only with std dev 113.46
+
+Enhancement Impact Analysis:
+Impact of adding Target Network to Experience Replay: -3.27
+Impact of adding Experience Replay to Target Network: -20.63
+Impact of Target Network alone: -105.12
+Impact of Experience Replay alone: -122.48
+
+Last Episode Reward Analysis:
+--------------------------------------------------------------------------------
+Method               Last Ep Reward  Std Dev         % of Max Possible
+--------------------------------------------------------------------------------
+Baseline DQN         173.80          180.26          34.76          %
+Target Network Only  196.40          57.16           39.28          %
+Experience Replay Only 255.40          144.11          51.08          %
+Both Methods         215.60          151.71          43.12          %
+
+Last 200K Steps Reward Analysis:
+--------------------------------------------------------------------------------
+Method               Last 200K Avg   Std Dev         % of Max Possible
+--------------------------------------------------------------------------------
+Baseline DQN         289.21          35.31           57.84          %
+Target Network Only  319.35          72.64           63.87          %
+Experience Replay Only 246.70          89.92           49.34          %
+Both Methods         254.49          37.62           50.90          %

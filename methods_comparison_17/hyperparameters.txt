@@ -1,0 +1,28 @@
+Fixed Hyperparameters:
+update_frequency: 5
+max_steps: 500
+total_steps: 1000000
+gamma: 0.99
+epsilon_start: 1.0
+epsilon_min: 0.1
+epsilon_stop_percentage: 0.1
+learning_rate: 0.001
+layer_size: 64
+nr_layers: 3
+target_update_frequency: 50
+replay_buffer_size: 100000
+batch_size: 16
+
+Experiment Methods:
+baseline: Baseline DQN (without Target Network or Experience Replay)
+  use_target_network: False
+  use_experience_replay: False
+target_network_only: DQN with Target Network only
+  use_target_network: True
+  use_experience_replay: False
+experience_replay_only: DQN with Experience Replay only
+  use_target_network: False
+  use_experience_replay: True
+both_methods: DQN with both Target Network and Experience Replay
+  use_target_network: True
+  use_experience_replay: True

@@ -1,0 +1,12 @@
+DQN Methods Comparison - Run 17
+============================
+
+Date: 2025-03-10 21:17:31 (Amsterdam time)
+Duration: 12.09 hours
+
+Total experiments: 20
+GPU used: 0
+Methods compared: baseline, target_network_only, experience_replay_only, both_methods
+Runs per method: 5
+
+See method_comparison_stats.txt for detailed analysis.
